@@ -13,11 +13,11 @@ This plugin connects Claude Code to [Abstraction](https://abstraction.dev) and t
 /plugin install abstraction@abstraction
 ```
 
-Then run `/mcp`, pick `abstraction` and sign in.
+Then run `/mcp`, pick `abstraction` and sign in. See the [MCP docs](https://docs.abstraction.dev/mcp) for the available tools and other clients.
 
 ## Requirements
 
-An Abstraction account with at least one analysed workspace.
+An Abstraction account with at least one analysed workspace. [Getting started](https://docs.abstraction.dev/setup/getting-started) walks through signing in, creating a workspace and connecting a repository; [Checks](https://docs.abstraction.dev/code-review/checks) explains how checks grade pull requests.
 
 ## License
 
