@@ -13,7 +13,7 @@ This plugin connects Claude Code to [Abstraction](https://abstraction.dev) and t
 /plugin install abstraction@abstraction
 ```
 
-Then run `/mcp`, pick `plugin:abstraction:mcp` and sign in. See the [MCP docs](https://docs.abstraction.dev/mcp) for the available tools and other clients.
+Then run `/mcp`, pick `plugin:abstraction:mcp` and sign in. To get skill and tool updates automatically, turn on auto-update for the marketplace under `/plugin` → Marketplaces; it is off by default. See the [MCP docs](https://docs.abstraction.dev/mcp) for the available tools and other clients.
 
 ## Requirements
 
