@@ -618,6 +618,10 @@ interface VariableStream extends Stream<Variable> {
     // filterTag(Tag.Password).filterTag(Tag.UserSet) is manual password tags.
     filterTag(...tags: Tag[]): this
 
+    // Keep variables carrying any of the variable user roles with these ids (OR).
+    // Available variable user roles, by id, are defined further down.
+    filterUserRole(...ids: number[]): this
+
     // The definitions (functions/types) these variables are declared in.
     owners(): DefinitionStream
 
