@@ -1,0 +1,17 @@
+{
+  "name": "abstraction",
+  "owner": {
+    "name": "Abstr AB",
+    "email": "dev@abstraction.dev"
+  },
+  "metadata": {
+    "description": "Abstraction for coding agents: the Abstraction MCP server plus skills for writing AQL and code checks."
+  },
+  "plugins": [
+    {
+      "name": "abstraction",
+      "source": "./plugins/abstraction",
+      "description": "Connects the Abstraction MCP server and adds skills for writing AQL queries and code checks that run on every pull request."
+    }
+  ]
+}

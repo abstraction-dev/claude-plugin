@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "abstraction": {
+      "type": "http",
+      "url": "https://app.abstraction.dev/mcp"
+    }
+  }
+}

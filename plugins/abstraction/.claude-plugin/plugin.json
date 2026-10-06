@@ -1,0 +1,11 @@
+{
+  "name": "abstraction",
+  "description": "Connects the Abstraction MCP server and adds skills for writing AQL queries and code checks that run on every pull request.",
+  "author": {
+    "name": "Abstr AB",
+    "email": "dev@abstraction.dev"
+  },
+  "homepage": "https://abstraction.dev",
+  "repository": "https://github.com/abstraction-dev/claude-plugin",
+  "keywords": ["abstraction", "aql", "code-checks", "architecture", "mcp"]
+}
