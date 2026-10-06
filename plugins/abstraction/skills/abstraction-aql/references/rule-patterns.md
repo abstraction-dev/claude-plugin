@@ -303,8 +303,8 @@ operand is non-empty first; this shape depends heavily on your names.
 ## Existence and naming
 
 ```typescript
-// Every Go source file name is lower case (snake_case).
-assertEmpty(files().filterInPackage(packages().filterName("api")).filterName("*[A-Z]*.go"))
+// Every Go source file name is snake_case: no capitals, no hyphens.
+assertEmpty(files().filterInPackage(packages().filterName("api")).filterName("{*[A-Z]*,*-*}.go"))
 ```
 
 `FileStream` has no `filterInPackageWithName`; go through
