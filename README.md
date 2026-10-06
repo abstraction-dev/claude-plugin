@@ -1,11 +1,4 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
-    <img alt="Abstraction" src="assets/logo-light.svg" height="44">
-  </picture>
-</p>
-
-# Abstraction for Claude Code
+# <picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg"><img alt="Abstraction" src="assets/logo-light.svg" height="30" align="top"></picture> for Claude Code
 
 This plugin connects Claude Code to [Abstraction](https://abstraction.dev) and teaches it to write AQL and code checks.
 
