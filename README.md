@@ -18,3 +18,7 @@ Then run `/mcp`, pick `abstraction` and sign in.
 ## Requirements
 
 An Abstraction account with at least one analysed workspace.
+
+## License
+
+[Apache-2.0](LICENSE). Abstraction and the Abstraction logo are registered trademarks of Abstr AB; the license does not grant permission to use them.
