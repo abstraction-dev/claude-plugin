@@ -211,6 +211,8 @@ How the pipeline treats the file:
   the whole file, and the review shows no checks from it. Check every key
   against the schema below, and copy the query text verbatim from your last
   `run_check`.
+- A file holds at most 32 KiB, nests at most 32 levels deep, and uses no YAML
+  anchors or aliases (`&name`, `*name`). Split a larger file by topic.
 
 Schema:
 
@@ -260,8 +262,9 @@ call `create_check` with the definition you validated with `run_check`:
    "settings_json": {"query": "let handlers = files().filterInPackage(packages().filterName(\"api\")).functions().filterRole(Role.HTTPHandler)\nassertNotEmpty(handlers)\nassertSubset(handlers.filterChanged(), handlers.filterHasDocComment())"}}]}
 ```
 
-- Writing workspace checks (`create_check`, `update_check`, `delete_check`)
-  needs workspace admin.
+- Writing and running workspace checks (`create_check`, `update_check`,
+  `delete_check`, `run_check`, `run_all_checks`) needs workspace admin or
+  editor.
 - The `filter_*` fields gate the check in reviews: it runs only when the diff
   touches a match. `filter_paths` match a file's package-relative path or the
   same path prefixed with its package (`api/**`).
@@ -285,7 +288,7 @@ to, so gate it with `filters`.
           message: Review the changed HTTP handlers for fail-open auth paths and unvalidated input.
 ```
 
-Models: `claude-fable-5`, `claude-opus-5-5`, `claude-sonnet-5-5`, `gpt-6-sol`,
+Models: `claude-fable-5`, `claude-opus-5-5`, `claude-sonnet-5-5`, `gpt-6.1-sol`,
 `gpt-6-luna`; efforts `low`, `medium`, `high`, `max`.
 
 Write the message as a reviewer's brief: what to flag, what not to flag, and
